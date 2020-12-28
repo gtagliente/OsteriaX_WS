@@ -1,0 +1,15 @@
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\bin\Release\netcoreapp2.1\ModisAPI.deps.json
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\bin\Release\netcoreapp2.1\ModisAPI.runtimeconfig.json
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\bin\Release\netcoreapp2.1\ModisAPI.runtimeconfig.dev.json
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\bin\Release\netcoreapp2.1\ModisAPI.dll
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\bin\Release\netcoreapp2.1\ModisAPI.pdb
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.csprojAssemblyReference.cache
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.csproj.CoreCompileInputs.cache
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.RazorAssemblyInfo.cache
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.RazorAssemblyInfo.cs
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.AssemblyInfoInputs.cache
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.AssemblyInfo.cs
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.RazorTargetAssemblyInfo.cache
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.dll
+C:\accademia\ProgettoAccademiaAzure\ModisAPI\EsercitazioneRestAPIModis\ModisAPI\obj\Release\netcoreapp2.1\ModisAPI.pdb
