@@ -12646,11 +12646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\accademia\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
+      "projectUniqueName": "C:\\Gianluca\\source\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
       "projectName": "OsteriaX_WS",
-      "projectPath": "C:\\accademia\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
+      "projectPath": "C:\\Gianluca\\source\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
       "packagesPath": "C:\\Users\\PC SUPER\\.nuget\\packages\\",
-      "outputPath": "C:\\accademia\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS\\obj\\",
+      "outputPath": "C:\\Gianluca\\source\\OsteriaX_WS\\OsteriaX_WS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

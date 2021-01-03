@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SexjeSDGCj6vdikG8/Pg7dhPeDDWLTwVBEidwv2ZunA2dj32Hh/fHX+vI9Hu302wEPNi1jrWZUJJO/JmEl4JDw==",
+  "dgSpecHash": "ivYZIjXLkBu56lFxrwwYU7bGktQJUHfmBiEX99lW4YL5gvJvqVau93ZXsf0i2/ZSbIAOLWJu4YwURP4XH/2qqQ==",
   "success": true,
-  "projectFilePath": "C:\\accademia\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
+  "projectFilePath": "C:\\Gianluca\\source\\OsteriaX_WS\\OsteriaX_WS\\OsteriaX_WS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC SUPER\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\PC SUPER\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
