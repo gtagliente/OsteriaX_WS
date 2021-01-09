@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace modisAPI.WorkerServices
 {
@@ -42,6 +44,53 @@ namespace modisAPI.WorkerServices
             db.Entry(GetDish(id)).State =
                Microsoft.EntityFrameworkCore.EntityState.Deleted;
             db.SaveChanges();
+        }
+
+        public MemoryStream GetItemImgStream(int id)
+        {
+            var filePath = db.Dishes.Where(x => x.Id == id).FirstOrDefault().ImgPath;
+
+            return GetMemoryStream(filePath);
+        }
+
+        private static MemoryStream GetMemoryStream(string filePath)
+        {
+            if (!System.IO.File.Exists(filePath))
+                throw new FileNotFoundException();
+
+            var memory = new MemoryStream();
+            using (var stream = new FileStream(filePath, FileMode.Open))
+            {
+                stream.CopyTo(memory);
+            }
+            memory.Position = 0;
+
+            return memory;
+        }
+
+        public string GetItemContentType(int id)
+        {
+            string path  = db.Dishes.Where(x => x.Id == id).FirstOrDefault().ImgPath;
+
+            return GetContentType(path);
+        }
+
+        private static string GetContentType(string path)
+        {
+            var provider = new FileExtensionContentTypeProvider();
+            string contentType;
+            if (!provider.TryGetContentType(path, out contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+            return contentType;
+        }
+
+        public string GetItemFileName(int id)
+        {
+            string path = db.Dishes.Where(x => x.Id == id).FirstOrDefault().ImgPath;
+
+            return Path.GetFileName(path);
         }
     }
 }

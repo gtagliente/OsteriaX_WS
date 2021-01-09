@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using modisAPI.Models;
 
 namespace modisAPI.WorkerServices
@@ -11,5 +12,9 @@ namespace modisAPI.WorkerServices
         void CreateDish(Dish dish);
         void UpdateDish(Dish updatedDish);
         void DeleteDish(int id);
+        MemoryStream GetItemImgStream(int id);
+        string GetItemContentType(int path);
+
+        string GetItemFileName(int id);
     }
 }

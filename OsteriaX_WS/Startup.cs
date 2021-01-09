@@ -14,6 +14,10 @@ using modisAPI.WorkerServices;
 using modisAPI.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace modisAPI
 {
@@ -37,13 +41,18 @@ namespace modisAPI
             services.AddDbContext<OsteriaContext>(opzioni =>
                 opzioni.UseSqlServer(connectionString));
 
+            services.Configure<FormOptions>(o => {
+                o.ValueLengthLimit = int.MaxValue;
+                o.MultipartBodyLengthLimit = int.MaxValue;
+                o.MemoryBufferThreshold = int.MaxValue;
+            });
+
             services.AddSwaggerGen(
                 c => c.SwaggerDoc("v2", 
                 new Info {
                     Title = "Osteria API" ,
-                    Version = "v2"})
-                );
-
+                    Version = "v2"
+                }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,6 +73,13 @@ namespace modisAPI
                                           .AllowAnyHeader()
                                           .AllowCredentials());
             app.UseMvc();
+
+            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath  = new PathString("/Resources")
+            });
 
             app.UseSwagger();
             app.UseSwaggerUI(
